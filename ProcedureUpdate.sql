@@ -78,3 +78,13 @@ CMIDStudent = @CMIDStudent,
 CMIDPost = @CMIDPost
 where CMID = @CMID 
 go
+create procedure UPDATETBLSectionity
+@SCID int ,
+@SCName varchar (100) ,
+@SCDiscreption varchar (max) 
+as
+UPDATE TBLSectionity 
+set SCName = @SCName,
+SCDiscreption = @SCDiscreption
+where SCID = @SCID 
+go

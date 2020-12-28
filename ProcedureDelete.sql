@@ -25,3 +25,8 @@ create procedure DeleteTBLC
 as
 delete from TBLComments where CMID =@CMID
 go
+create procedure DeleteTBLSectionity
+@SCID int
+as
+delete from TBLSectionity where SCID =@SCID
+go

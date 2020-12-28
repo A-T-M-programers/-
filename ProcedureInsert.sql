@@ -59,3 +59,12 @@ insert into TBLComments(CMComment,CMIDStudent,CMIDPost)
 values (@CMComment,@CMIDStudent ,@CMIDPost);
 set @CMID =@@IDENTITY
 go
+create procedure InsertTBLSectionity
+@SCID int output,
+@SCName varchar (100) ,
+@SCDiscreption varchar (max)
+as
+insert into TBLSectionity(SCName,SCDiscreption)
+values (@SCName ,@SCDiscreption);
+set @SCID =@@IDENTITY
+go
